@@ -50,6 +50,6 @@ output=`parallel --jobs ${#SERVERS[@]} --will-cite <<EOF
 $commands
 EOF`
 
-sort <<EOF
+sort -g <<EOF
 $output
 EOF
